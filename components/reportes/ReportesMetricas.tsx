@@ -1,7 +1,9 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function ReportesMetricas() {
   return (
-    <View>ReportesMetricas</View>
+    <View>
+      <Text>Estos son los reportes</Text>
+    </View>
   )
 }

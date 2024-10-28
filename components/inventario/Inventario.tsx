@@ -1,7 +1,9 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Inventario() {
   return (
-    <View>Inventario</View>
-  )
+    <View>
+      <Text>Inventario</Text>
+    </View>
+  );
 }

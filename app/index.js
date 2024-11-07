@@ -1,13 +1,19 @@
 import { Text, View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-
+import { Stack } from "expo-router";
 import Login from "../components/login/Login";
-export default function index() {
-  const insets = useSafeAreaInsets();
+import Screen from "../components/Screen";
 
+export default function Index() {
   return (
-    <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
-      <Login />
-    </View>
+    <Screen>
+      <View>
+        <Stack.Screen
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Login />
+      </View>
+    </Screen>
   );
 }

@@ -25,5 +25,5 @@ export default function Menu() {
         </Pressable>
       </Link>
     </View>
-  )
+  );
 }

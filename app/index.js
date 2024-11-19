@@ -5,15 +5,13 @@ import Screen from "../components/Screen";
 
 export default function Index() {
   return (
-    <Screen>
-      <View>
-        <Stack.Screen
-          options={{
-            headerShown: false,
-          }}
-        />
-        <Login />
-      </View>
-    </Screen>
+    <View>
+      <Stack.Screen
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Login />
+    </View>
   );
 }

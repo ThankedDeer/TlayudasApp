@@ -4,7 +4,7 @@
     "slug": "tlayudas-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/img/Logo.png",
     "userInterfaceStyle": "light",
     "scheme": "tlayudas-app",
     "splash": {

@@ -2,12 +2,13 @@ import Checkbox from "expo-checkbox";
 import React, { useState } from "react";
 import { Image, Pressable, Text, TextInput, View } from "react-native";
 import Logo from "../../assets/img/Logo.png";
+import { Link } from "expo-router";
 
 const Login = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <View className="p-6 pt-16 bg-white h-full w-full">
+    <View className="p-6 pt-2.5 bg-white h-full w-full">
       <Text className="text-3xl font-bold text-center my-4 text-gray-800">
         Las Tlayudas
       </Text>
@@ -48,9 +49,13 @@ const Login = () => {
           <Text className="text-vibrantPink">¿Olvidaste tu contraseña?</Text>
         </Pressable>
       </View>
-      <Pressable className="p-3 bg-vibrantPink rounded-lg items-center">
-        <Text className="text-white text-lg font-semibold">Iniciar sesión</Text>
-      </Pressable>
+      <Link asChild href="/pages/menu/menu">
+        <Pressable className="p-3 bg-vibrantPink rounded-lg items-center">
+          <Text className="text-white text-lg font-semibold">
+            Iniciar sesión
+          </Text>
+        </Pressable>
+      </Link>
     </View>
   );
 };

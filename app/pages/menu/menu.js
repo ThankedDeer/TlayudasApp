@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Menu from "../../../components/menu/Menu";
 import { Stack } from "expo-router";
 import Screen from "../../../components/Screen";
@@ -13,7 +13,7 @@ export default function menu() {
 
   return (
     <Screen>
-      <View>
+      <View style={styles.container}>
         <Stack.Screen
           options={{
             headerStyle: {
@@ -32,3 +32,10 @@ export default function menu() {
     </Screen>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+    height: "100%",
+  },
+});

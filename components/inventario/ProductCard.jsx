@@ -20,7 +20,7 @@ export default function ProductCard({ producto }) {
               {producto.nombre}
             </Text>
             <Image
-              source={require("../../assets/IMG/comida.jpg")}
+              source={require("../../assets/img/comida.jpg")}
               className="h-28 w-28"
             />
             <Text className="text-sm font-bold">
@@ -51,7 +51,7 @@ export default function ProductCard({ producto }) {
       <Pressable onPress={() => setModalVisible(true)}>
         <View className="flex-col w-32 m-3 rounded-b-lg bg-pink-400">
           <Image
-            source={require("../../assets/IMG/comida.jpg")}
+            source={require("../../assets/img/comida.jpg")}
             className="w-full h-24"
           />
           <Text className="text-center py-2 text-white">{producto.nombre}</Text>

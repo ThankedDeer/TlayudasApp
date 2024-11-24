@@ -1,7 +1,6 @@
-import { Text, View } from "react-native";
 import { Stack } from "expo-router";
+import { View } from "react-native";
 import Login from "../components/login/Login";
-import Screen from "../components/Screen";
 
 export default function Index() {
   return (
